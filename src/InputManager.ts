@@ -113,7 +113,7 @@ export class InputManager {
     this.eventQueue.push(event);
   };
 
-  public processEvents = () => {
+  public processEvents = (): void => {
     // First, process events in all device states, so they can update their internal state and call handleEvent
     for (const deviceState of this.deviceStates.values()) {
       deviceState.processEvents();
@@ -208,7 +208,7 @@ export class InputManager {
   public subscribe<TDef extends ActionDefinition>(
     action: TDef,
     callback: (state: ActionState<TDef["initialValue"]>) => void,
-  ) {
+  ): () => void {
     this.subscribers[action.name].push(
       callback as (state: ActionState<unknown>) => void,
     );

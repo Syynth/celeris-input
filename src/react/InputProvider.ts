@@ -4,6 +4,7 @@ import {
   useEffect,
   useMemo,
   useState,
+  ReactElement,
 } from "react";
 import { InputManager } from "../InputManager";
 import { useTick } from "@pixi/react";
@@ -22,7 +23,7 @@ export function InputProvider({
   bindings,
   enforceSingleton = true,
   children,
-}: PropsWithChildren<InputProviderProps>) {
+}: PropsWithChildren<InputProviderProps>): ReactElement {
   const [inputManager, setInputManager] = useState(() =>
     enforceSingleton
       ? InputManager.lazyInstance(bindings)
