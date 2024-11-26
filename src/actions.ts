@@ -1,4 +1,3 @@
-// actions.ts
 export enum ActionType {
   Button = "button",
   Axis = "axis",

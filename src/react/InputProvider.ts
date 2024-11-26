@@ -1,8 +1,14 @@
-import { PropsWithChildren, useEffect, useMemo, useState } from "react";
-import { InputManager } from "./InputManager";
+import {
+  createElement,
+  PropsWithChildren,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
+import { InputManager } from "../InputManager";
 import { useTick } from "@pixi/react";
-import { ActionMap } from "./actions";
-import { ActionBinding } from "./InputBinding";
+import { ActionMap } from "../actions";
+import { ActionBinding } from "../ActionBinding";
 import { InputContext } from "./context";
 
 interface InputProviderProps {
@@ -44,7 +50,8 @@ export function InputProvider({
 
   const value = useMemo(() => ({ inputManager }), [inputManager]);
 
-  return (
-    <InputContext.Provider value={value}>{children}</InputContext.Provider>
-  );
+  return createElement(InputContext.Provider, {
+    value: value,
+    children,
+  });
 }

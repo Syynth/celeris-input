@@ -1,5 +1,4 @@
-// useActionPerformed.ts
-import { ActionDefinition } from "./actions";
+import { ActionDefinition } from "../actions";
 import { useInputManager } from "./context";
 import { useEffect, useLayoutEffect, useRef } from "react";
 

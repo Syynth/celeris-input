@@ -1,8 +1,7 @@
-// useActionState.ts
 import { useInputManager } from "./context";
 import { useEffect, useMemo, useRef } from "react";
-import { ActionState } from "./InputManager";
-import { ActionDefinition } from "./actions";
+import { ActionState } from "../InputManager";
+import { ActionDefinition } from "../actions";
 
 export function useActionState<const TDef extends ActionDefinition>(
   action: TDef,

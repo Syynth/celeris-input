@@ -1,5 +1,3 @@
-// devices/GamepadState.ts
-
 export enum GamepadButtons {
   // Right cluster buttons (East, South, West, North)
   South = 0, // Bottom button in right cluster (e.g., A on Xbox, Cross on PlayStation)

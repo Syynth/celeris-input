@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-// devices/DeviceState.ts
 export enum DeviceType {
   Keyboard = "keyboard",
   Mouse = "mouse",

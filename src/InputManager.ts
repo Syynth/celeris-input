@@ -1,4 +1,3 @@
-// InputManager.ts
 import { ActionDefinition } from "./actions";
 import {
   DeviceState,
@@ -7,7 +6,7 @@ import {
   GamepadState,
   MouseState,
 } from "./devices";
-import { ActionBinding } from "./InputBinding";
+import { ActionBinding } from "./ActionBinding";
 import invariant from "tiny-invariant";
 
 export interface ActionState<TValue = unknown> {

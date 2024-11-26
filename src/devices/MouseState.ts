@@ -1,4 +1,3 @@
-// devices/MouseState.ts
 import { DeviceState, DeviceType } from "./DeviceState";
 
 export class MouseState implements DeviceState<DeviceType.Mouse> {

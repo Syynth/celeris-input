@@ -1,4 +1,3 @@
-// devices/GamepadState.ts
 import { DeviceState, DeviceType } from "./DeviceState";
 import { GamepadButtons, GamepadAxis } from "./StandardGamepad";
 

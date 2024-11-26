@@ -1,4 +1,3 @@
-// devices/KeyboardState.ts
 import { DeviceState, DeviceType } from "./DeviceState";
 
 export class KeyboardState implements DeviceState<DeviceType.Keyboard> {
