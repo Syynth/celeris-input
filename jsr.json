@@ -1,0 +1,9 @@
+{
+  "name": "@s92/celeris-input",
+  "version": "0.0.1",
+  "license": "MIT",
+  "exports": {
+    ".": "./mod.ts",
+    "./react-pixi": "./react-pixi.ts"
+  }
+}

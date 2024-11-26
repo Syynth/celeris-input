@@ -1,0 +1,38 @@
+{
+  "name": "@s92/celeris-input",
+  "version": "0.0.1",
+  "description": "Input handling for Celeris Engine",
+  "main": "mod.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syynth/celeris-input.git"
+  },
+  "keywords": [
+    "JS",
+    "Pixi.js",
+    "React",
+    "Game Engine",
+    "Input",
+    "Input Handling"
+  ],
+  "author": "@syynth.dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Syynth/celeris-input/issues"
+  },
+  "homepage": "https://github.com/Syynth/celeris-input#readme",
+  "dependencies": {
+    "tiny-invariant": "^1.3.3"
+  },
+  "peerDependencies": {
+    "react": "^17 || ^18"
+  },
+  "devDependencies": {
+    "@pixi/react": "^8.0.0-beta.14",
+    "@types/react": "^18.3.12",
+    "pixi.js": "^8.6.0",
+    "react": "^18",
+    "typescript": "^5.7.2"
+  }
+}
